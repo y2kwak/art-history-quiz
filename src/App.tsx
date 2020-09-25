@@ -6,7 +6,6 @@ import QuestionCard from './components/QuestionCard'
 // types
 import { QuestionState, Difficulty } from './API';
 //styles
-import { GlobalStyle } from './App.styles';
 
 export type AnswerObject = {
   question:string;
@@ -71,7 +70,6 @@ function App() {
 
   return ( 
     <>
-    <GlobalStyle/>
     <div className="App">
       <h1>React Quiz </h1>
       {gameOver || userAnswers.length === TOTAL_QUESTIONS ? ( // only shows the start button if 10 questions have not been answered and is gameOver intial
